@@ -1,0 +1,17 @@
+default_job = "integration_tests"
+env.CARGO_TERM_COLOR = "always"
+
+[keybindings]
+i = "job:integration_tests"
+e = "job:expand"
+r = "toggle-raw-output"
+
+[jobs.integration_tests]
+command = ["cargo", "test", "--test", "integration"]
+need_stdout = true
+background = false
+
+[jobs.expand]
+command = ["cargo", "expand", "--test", "expand", "--theme", "gruvbox-dark", "expand"]
+need_stdout = true
+background = false
