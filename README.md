@@ -8,7 +8,7 @@ bacon #start default (integration tests)
 ### bacon Shortcuts
 - i  integration tests
 - e  expand
-- r  toggle-raw-output
+- o  toggle-raw-output
 
 
 ### expand
@@ -18,6 +18,9 @@ for syntax highlighting it was necessary for me to set
 [expand]
 color = "always"
 ```
+
+## if added as subcrate
+copy the tests to the parent cargo.toml and adjust the paths to match
 
 ## links
 

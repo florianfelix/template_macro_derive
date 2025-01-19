@@ -4,7 +4,7 @@ env.CARGO_TERM_COLOR = "always"
 [keybindings]
 i = "job:integration_tests"
 e = "job:expand"
-r = "toggle-raw-output"
+o = "toggle-raw-output"
 
 [jobs.integration_tests]
 command = ["cargo", "test", "--test", "integration"]
